@@ -1,0 +1,4 @@
+const sendOnMyEmail = (error , message) => {
+
+
+}
