@@ -61,6 +61,8 @@ const register = async (req, res) => {
                 email: user.email,
                 first_name: user.first_name,
                 last_name: user.last_name,
+                createdAt:user.createdAt,
+                updatedAt:user.updatedAt,
             }
         })
 
@@ -112,6 +114,8 @@ const login = async (req, res) => {
                 email: user.email,
                 first_name: user.first_name,
                 last_name: user.last_name,
+                createdAt:user.createdAt,
+                updatedAt:user.updatedAt,
             }
         })
 

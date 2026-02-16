@@ -19,7 +19,7 @@ const generated_token = (res, user) => {
 
     res.cookie("jwt", refresh_token, {
         httpOnly: true, // accessible by web server
-        // secure: true, //=> https
+        secure: process.env.NODE_ENV === "production" , //=> https
         sameSite: "None",
         maxAge: Number(process.env.COOKISE_EXPIRES), // cookies expiresIn: 7 days
     })
