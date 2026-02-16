@@ -11,7 +11,7 @@ ConnectDB()
 
 const app = express();
 
-const PORT = process.env.NODE_ENV === "production" ? process.env.PORT : 2001
+const PORT = process.env.NODE_ENV == "production" ? process.env.PORT : 2001
 
  
 
